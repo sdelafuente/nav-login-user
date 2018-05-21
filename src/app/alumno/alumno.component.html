@@ -1,0 +1,9 @@
+<div class="" *ngIf="!verDatos" >
+    <p >
+
+      alumno works!
+    </p>
+    <button type="button" name="ver_datos" (click)="verDatos=true;" >Ver Datos</button>
+</div>
+
+<app-datos (btnVolver)="verDatos=$event" *ngIf="verDatos" ></app-datos>
