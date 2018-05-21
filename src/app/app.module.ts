@@ -13,15 +13,16 @@ import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms'
 
 const MiRuteo = [
-{path: '' , component:LoginComponent },    
-{path: 'login' , component:LoginComponent },
-{ path: 'alumno' ,component: AlumnoComponent ,
-    children:
-     [{path: 'datos' , component: DatosComponent},
-      {path: 'grilla' , component: GrillaComponent}]
-},
-{path: '**' , component: ErrorComponent},
-{path: 'error' , component: ErrorComponent}
+    { path : '' , component : LoginComponent },
+    { path : 'login' , component : LoginComponent },
+    { path : 'alumno' ,component : AlumnoComponent ,
+        children : [
+                {path: 'datos' , component : DatosComponent},
+                {path: 'grilla' , component : GrillaComponent}
+            ]
+    },
+    {path : '**' , component : ErrorComponent},
+    {path : 'error' , component : ErrorComponent}
 ];
 
 @NgModule({

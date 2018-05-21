@@ -1,9 +1,11 @@
-<div class="envDato">
+<div class="row">
+<div class="col-md-12 bg-secondary rounded">
     <form class="topBefore" action="">
-        <input [(ngModel)]="miPersona.usuario" name="usuario" placeholder="Usuario">
+        <input [(ngModel)]="miPersona.usuario" name="usuario" placeholder="Usuario" />
         <br>
-        <input [(ngModel)]="miPersona.password" name="password" placeholder="Contraseña">
+        <input type="password" [(ngModel)]="miPersona.password" name="password" placeholder="Contraseña">
         <br>
-        <button name="enviar" class="submit" (click)="Enviar();" >Enviar</button>
+        <button type="button" name="enviar" class="btn btn-success btn-sm" (click)="Enviar();" >Enviar</button>
     </form>
+</div>
 </div>

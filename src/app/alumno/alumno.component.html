@@ -1,9 +1,9 @@
-<div class="" *ngIf="!verDatos" >
-    <p >
+<div class="row">
+    <div class="col-md-12 bg-secondary rounded" *ngIf="!verDatos" >
+        <p>      alumno works!    </p>
+        <button type="button" class="btn btn-success btn-sm" name="ver_datos" (click)="verDatos=true;" >Ver Datos</button>
 
-      alumno works!
-    </p>
-    <button type="button" name="ver_datos" (click)="verDatos=true;" >Ver Datos</button>
+    </div>
+
 </div>
-
 <app-datos (btnVolver)="verDatos=$event" *ngIf="verDatos" ></app-datos>
